@@ -61,6 +61,12 @@ btn_mul=tk.Button(root,text="*",command=lambda:add_to_calculation("*"),width=5,f
 btn_mul.grid(row=3,column=4)
 btn_div=tk.Button(root,text="/",command=lambda:add_to_calculation("/"),width=5,font=("Arial",14))
 
+btn_div.grid(row=4,column=4)
+btn_open=tk.Button(root,text="(",command=lambda:add_to_calculation("("),width=5,font=("Arial",14))
+btn_open.grid(row=4,column=1)
+btn_close=tk.Button(root,text=")",command=lambda:add_to_calculation(")"),width=5,font=("Arial",14))
+btn_close.grid(row=4,column=3)
+
 
 
 root.mainloop()
